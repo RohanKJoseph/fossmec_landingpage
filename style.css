@@ -8,7 +8,6 @@
 
 html {
     scroll-behavior: smooth;
-    width: device-width;
     overflow-x: hidden;
 }
 
@@ -584,5 +583,86 @@ footer ul {
     .home h1 {
         font-size: 2rem;
         padding-bottom: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .blog-container {
+        padding: 10px;
+        margin-right: 0;
+    }
+
+    .blog-container ul {
+        padding: 0;
+    }
+
+    .blog-container li {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+        margin-right: 0;
+    }
+
+    .blog-container span p {
+        width: 100%;
+        margin-left: 0;
+        height: auto;
+        padding: 10px;
+    }
+
+    .blog-container ul li a {
+        font-size: 1.5rem;
+        width: 100%;
+        margin-bottom: 20px;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .floating-text {
+        width: 100%;
+        padding: 20px;
+        height: auto;
+    }
+
+    .floating-text h1 {
+        font-size: 2rem;
+        padding-bottom: 20px;
+    }
+
+    .floating-text p {
+        width: auto;
+    }
+
+    .line {
+        font-size: 1rem;
+        padding: 20px 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr; /* Single column */
+        padding: 10px;
+    }
+
+    .container img {
+        height: 200px;
+    }
+}
+
+@media (max-width: 768px) {
+    .slider {
+        margin: 0 auto;
+        float: none;
+        height: 300px;
+        width: 100%;
+    }
+
+    .content {
+        margin-left: 0;
+        margin-top: 20px;
+        padding: 15px;
+        height: auto;
     }
 }
