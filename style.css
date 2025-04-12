@@ -425,6 +425,7 @@ nav a{
     .arrows .arrow {
         padding: 6px 8px; /* Smaller arrow buttons */
         font-size: 18px;
+        
     }
 }
 
@@ -482,58 +483,66 @@ nav a{
 }
 
 .blog-container {
-    display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 20px;
     margin-top: 70px;
     padding: 20px;
     width: 100%;
+    margin-right: 20px;
 }
 
-.blog ul {
+.blog-container ul {
+    display: block;
     align-items: center;
     justify-content: center;
     height: 100%;
     width: 100%;
 }
 
-.blog li {
-    width:800px;
+.blog-container li {
+    width:100%;
     height: 200px;
     background-color: rgb(152, 152, 255);
-    margin: 20px;
+    margin-top: 25px;
+    margin-right: 100px;
     list-style: none;
     border-radius: 15px;
     overflow: hidden;
+    padding-top: 50px;
+    padding-left: 40px;
     display: flex;
-    
+    align-items: center;
 }
 
-.blog img {
-    height: 100%;
-    object-fit: cover;
-    border-radius: 15px;
-    
-}
-
-.blog a {
-    cursor: pointer;
-}
-
-.blog a:hover {
-    cursor: pointer;
-    text-decoration: none;
-}
-
-.blog span {
-    font-size: 1.5rem;
+.blog-container span p{
+    font-size: 1.2rem;
     color: #0E2D58;
     padding: 20px;
     align-items: center;
-    justify-content: center;
-    height: 500px;
-    width: 100%;
+    display: block;
+    height: 200px;
+    width: 900px;
+    margin-left: 10px;
 }
+
+.blog-container ul li a {
+    height:100%;
+    width: 200px;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    font-size: 3rem;
+    background-color: #7bacf1;
+    border-radius: 10px;
+    display: flex;
+    margin-bottom: 40px;
+}
+
+.blog-container ul li a:hover {
+    border : 2px solid wheat;
+    cursor:pointer
+}
+
 
 footer {
     height: 100%;
@@ -558,4 +567,22 @@ footer ul {
  
 
  
+@media(max-width: 700px){
+    .blog-container ul li a {
+        width: 100%;
+        height: 100%;
+        padding: 10px;
+        font-size: 2rem;
+    }
+    
+    .blog-container li p {
+        font-size: 1rem;
+        padding: 10px;
+        width: 100%;
+    }
 
+    .home h1 {
+        font-size: 2rem;
+        padding-bottom: 20px;
+    }
+}
